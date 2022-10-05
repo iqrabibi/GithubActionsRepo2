@@ -1,0 +1,12 @@
+name: Dev Code Deployment
+run-name: ${{ github.actor }}  developer is pushing the code , then test cases will execute
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+  Execute-Test-Cases:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: npm run run_test_cases_main

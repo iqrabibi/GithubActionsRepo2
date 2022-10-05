@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  },
+  "scripts": {
+    "test": "cypress run",
+    "run_test_cases_main" : "npx cypress run --spec cypress/e2e/emptyTest.cy.js --headed"
+  }
+}
