@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@master
         with:
             repository: iqrabibi/GithubActionPractice
-            token: ${{ secrets.MY_PAT ||  github.token}} 
+            token: ${{ secrets.MY_PAT}} 
             # path: iqrabibi/GithubActionPractice
 
             #// in case private repo and on other github
