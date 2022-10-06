@@ -7,10 +7,10 @@ jobs:
   Run_Test_Cases_As_Part_Of_Develop:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout_To_Testcases_Repo
         uses: actions/checkout@v3
         with:
            repository: iqrabibi/GithubActionPractice
-            # token: ${{ secrets.my_pat }}
+            # token: ${{ secrets.my_pat }} // in case private repo and on other github
       - run: npm install
       - run: npm run run_test_cases
