@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
         with:
            repository: iqrabibi/GithubActionPractice
-            token: ${{ secrets.RepoAccessToken }}
-            # // in case private repo and on other github
+            repo-token: ${{ secrets.GITHUB_TOKEN }} 
+            #// in case private repo and on other github
       - run: npm install
       - run: npm run run_test_cases
