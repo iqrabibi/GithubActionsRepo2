@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
         with:
             repository: iqrabibi/GithubActionPractice
-            token: ${{ github.TOKENVALUE }} 
+            token: ${{ secrets.TOKENVALUE }} 
             # path: iqrabibi/GithubActionPractice
 
             #// in case private repo and on other github
