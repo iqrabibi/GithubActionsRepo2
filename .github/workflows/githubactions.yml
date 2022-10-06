@@ -8,10 +8,10 @@ jobs:
   Run_Test_Cases_As_Part_Of_Develop:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout_To_Testcases_Repo
+      - name: Checkout_To_Testcases_Repo0
         uses: actions/checkout@main
         with:
-            repository: iqrabibi/GithubActionPractice
+            repository: iqrabibi/GithubActionPractice@main
             token: ${{ secrets.MY_PAT||  github.token}} 
             # path: iqrabibi/GithubActionPractice
 
