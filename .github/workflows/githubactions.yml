@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout_To_Testcases_Repo0
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
         with:
-            repository: iqrabibi/GithubActionPractice@main
+            repository: iqrabibi/GithubActionPractice
             token: ${{ secrets.MY_PAT||  github.token}} 
             # path: iqrabibi/GithubActionPractice
 
