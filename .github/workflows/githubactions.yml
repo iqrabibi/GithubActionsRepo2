@@ -7,7 +7,7 @@ jobs:
   Run_Test_Cases_As_Part_Of_Develop:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      uses: actions/checkout@v3
          with:
           repository: iqrabibi/GithubActionPractice
           # token: ${{ secrets.my_pat }}
