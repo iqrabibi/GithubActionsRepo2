@@ -2,7 +2,6 @@ name: Dev Code Deployment
 run-name: ${{ github.actor }}  developer is pushing the code , then test cases will execute
 on: 
   push:
-  pull_request_target:
   workflow_dispatch:
 jobs:
   Run_Test_Cases_As_Part_Of_Develop:
@@ -13,8 +12,6 @@ jobs:
         with:
             repository: iqrabibi/GithubActionPractice
             token: ${{ secrets.MY_PAT}} 
-            # path: iqrabibi/GithubActionPractice
-
             #// in case private repo and on other github
       - run: npm install
       - run: npm run run_test_cases
