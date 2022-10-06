@@ -12,7 +12,7 @@ jobs:
         with:
             repository: iqrabibi/GithubActionPractice
             token: ${{ secrets.TOKENVALUE }} 
-            # path: iqrabibi/GithubActionPractice
+            path: iqrabibi/GithubActionPractice
 
             #// in case private repo and on other github
       - run: npm install
