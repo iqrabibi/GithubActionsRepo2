@@ -17,9 +17,9 @@ jobs:
       - run: npm run run_test_cases
 
      - name: Send_mail
-        if: always()
-        uses: dawidd6/action-send-mail@v2
-        with:
+      if: always()
+      uses: dawidd6/action-send-mail@v2
+      with:
       # mail server settings
         server_address: smtp.gmail.com
         server_port: 465
