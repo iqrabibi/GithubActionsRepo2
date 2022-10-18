@@ -1,4 +1,4 @@
-name: Dev Code Deployment
+name: Dev Code Deploymenttt
 run-name: ${{ github.actor }}  developer is pushing the code , then test cases will execute
 on: 
   push:
